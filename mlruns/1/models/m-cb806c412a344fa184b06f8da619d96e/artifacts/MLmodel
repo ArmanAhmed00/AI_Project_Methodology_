@@ -1,0 +1,53 @@
+artifact_path: /Users/arman/Documents/Projects/AI_Project_Methodology_/mlruns/1/models/m-cb806c412a344fa184b06f8da619d96e/artifacts
+flavors:
+  python_function:
+    code: code
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.skops
+    predict_fn: predict_proba
+    python_version: 3.13.13
+  sklearn:
+    code: code
+    pickled_model: model.skops
+    serialization_format: skops
+    sklearn_version: 1.9.1
+    skops_trusted_types:
+    - churn.features.FeatureBuilder
+    - numpy.dtype
+    - xgboost.core.Booster
+    - xgboost.sklearn.XGBClassifier
+is_signature_from_type_hint: false
+mlflow_version: 3.16.1
+model_id: m-cb806c412a344fa184b06f8da619d96e
+model_size_bytes: 495480
+model_uuid: m-cb806c412a344fa184b06f8da619d96e
+prompts: null
+run_id: a439b805087e4910867f17c0519fa0d6
+saved_input_example_info:
+  artifact_path: input_example.json
+  pandas_orient: split
+  serving_input_path: serving_input_example.json
+  type: dataframe
+signature:
+  inputs: '[{"type": "double", "name": "Tenure", "required": false}, {"type": "double",
+    "name": "CityTier", "required": true}, {"type": "double", "name": "WarehouseToHome",
+    "required": false}, {"type": "double", "name": "HourSpendOnApp", "required": false},
+    {"type": "double", "name": "NumberOfDeviceRegistered", "required": true}, {"type":
+    "double", "name": "SatisfactionScore", "required": true}, {"type": "double", "name":
+    "NumberOfAddress", "required": true}, {"type": "double", "name": "Complain", "required":
+    true}, {"type": "double", "name": "OrderAmountHikeFromlastYear", "required": false},
+    {"type": "double", "name": "CouponUsed", "required": false}, {"type": "double",
+    "name": "OrderCount", "required": false}, {"type": "double", "name": "DaySinceLastOrder",
+    "required": false}, {"type": "double", "name": "CashbackAmount", "required": true},
+    {"type": "string", "name": "PreferredLoginDevice", "required": true}, {"type":
+    "string", "name": "PreferredPaymentMode", "required": true}, {"type": "string",
+    "name": "Gender", "required": true}, {"type": "string", "name": "PreferedOrderCat",
+    "required": true}, {"type": "string", "name": "MaritalStatus", "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float32", "shape": [-1,
+    2]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2026-10-06 09:27:44.577874'

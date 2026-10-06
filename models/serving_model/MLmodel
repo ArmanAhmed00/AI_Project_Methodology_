@@ -1,4 +1,4 @@
-artifact_path: /Users/arman/Documents/Projects/AI_Project_Methodology_/mlruns/1/models/m-11ed40000ca7412884fa3789b7e2dede/artifacts
+artifact_path: /Users/arman/Documents/Projects/AI_Project_Methodology_/mlruns/1/models/m-3816b847ef45483bb14045ff683b83ba/artifacts
 flavors:
   python_function:
     code: code
@@ -21,11 +21,11 @@ flavors:
     - xgboost.sklearn.XGBClassifier
 is_signature_from_type_hint: false
 mlflow_version: 3.16.1
-model_id: m-11ed40000ca7412884fa3789b7e2dede
+model_id: m-3816b847ef45483bb14045ff683b83ba
 model_size_bytes: 1891046
-model_uuid: m-11ed40000ca7412884fa3789b7e2dede
+model_uuid: m-3816b847ef45483bb14045ff683b83ba
 prompts: null
-run_id: fffc7eb7349a42f39d7ec927996af905
+run_id: 129012ac6d934cce9f09eacd5ce9095b
 saved_input_example_info:
   artifact_path: input_example.json
   pandas_orient: split
@@ -50,4 +50,4 @@ signature:
     2]}}]'
   params: null
 type_hint_from_example: false
-utc_time_created: '2026-10-05 12:28:53.304722'
+utc_time_created: '2026-10-06 09:31:01.299630'
