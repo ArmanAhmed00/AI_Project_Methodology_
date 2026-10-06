@@ -1,0 +1,38 @@
+name: retailgenius-churn
+
+python_env: python_env.yaml
+
+entry_points:
+  prepare:
+    parameters:
+      raw_path: {type: string, default: "data/raw/E Commerce Dataset.xlsx"}
+    command: "PYTHONPATH=src python -m churn.data --raw-path '{raw_path}'"
+
+  train:
+    parameters:
+      model: {type: string, default: xgboost}
+      n_estimators: {type: int, default: 400}
+      max_depth: {type: int, default: 5}
+      learning_rate: {type: float, default: 0.05}
+    command: >-
+      PYTHONPATH=src python -m churn.train --model {model}
+      --n-estimators {n_estimators} --max-depth {max_depth}
+      --learning-rate {learning_rate}
+
+  sweep:
+    command: "PYTHONPATH=src python -m churn.train --sweep"
+
+  register:
+    parameters:
+      metric: {type: string, default: cv_roc_auc_mean}
+    command: "PYTHONPATH=src python -m churn.register --metric {metric}"
+
+  explain:
+    command: "PYTHONPATH=src python -m churn.explain"
+
+  main:
+    command: >-
+      PYTHONPATH=src python -m churn.data &&
+      PYTHONPATH=src python -m churn.train --sweep &&
+      PYTHONPATH=src python -m churn.register &&
+      PYTHONPATH=src python -m churn.explain

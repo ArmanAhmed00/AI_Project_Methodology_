@@ -1,0 +1,41 @@
+[tool.poetry]
+name = "churn"
+version = "0.1.0"
+description = "RetailGenius customer churn prediction - EPITA AI Project Methodology graded project"
+authors = ["Group - EPITA MSc AI Systems"]
+readme = "README.md"
+packages = [{ include = "churn", from = "src" }]
+
+[tool.poetry.dependencies]
+python = ">=3.13,<3.14"
+pandas = "3.0.6"
+numpy = "2.5.3"
+scikit-learn = "1.9.1"
+xgboost = "3.4.1"
+shap = "0.52.0"
+mlflow = "3.16.1"
+skops = "0.16.0"
+matplotlib = "3.11.2"
+openpyxl = "3.1.5"
+joblib = "1.6.0"
+requests = "2.34.2"
+
+[tool.poetry.group.dev.dependencies]
+black = "26.10.0"
+flake8 = "7.4.1"
+pytest = "*"
+sphinx = "9.1.0"
+sphinx-rtd-theme = "3.1.0"
+jupyter = "*"
+
+[tool.black]
+line-length = 88
+target-version = ["py313"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[build-system]
+requires = ["poetry-core>=1.9"]
+build-backend = "poetry.core.masonry.api"

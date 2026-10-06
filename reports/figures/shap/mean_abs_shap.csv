@@ -1,0 +1,34 @@
+,mean_abs_shap
+Tenure,1.9447
+Complain,1.0189
+NumberOfAddress,0.7385
+CashbackAmount,0.5793
+DaySinceLastOrder,0.5136
+MaritalStatus_Single,0.4694
+WarehouseToHome,0.4691
+SatisfactionScore,0.4429
+CityTier,0.368
+CashbackPerOrder,0.3644
+IsNewCustomer,0.2666
+OrderAmountHikeFromlastYear,0.2625
+NumberOfDeviceRegistered,0.2563
+PreferredLoginDevice_Computer,0.1929
+PreferedOrderCat_Laptop & Accessory,0.1902
+Gender_Female,0.1648
+PreferredPaymentMode_E wallet,0.1429
+PreferredPaymentMode_Credit Card,0.1344
+CouponPerOrder,0.1298
+PreferedOrderCat_Mobile Phone,0.1285
+CouponUsed,0.107
+MaritalStatus_Married,0.1007
+PreferedOrderCat_Fashion,0.0939
+PreferredPaymentMode_Cash on Delivery,0.0861
+OrderCount,0.0851
+PreferredPaymentMode_UPI,0.078
+HourSpendOnApp,0.0722
+PreferredPaymentMode_Debit Card,0.0602
+PreferedOrderCat_Others,0.0331
+PreferredLoginDevice_Mobile Phone,0.0217
+MaritalStatus_Divorced,0.0164
+Gender_Male,0.0146
+PreferedOrderCat_Grocery,0.0037

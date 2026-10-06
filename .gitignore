@@ -1,0 +1,27 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+.DS_Store
+docs/build/doctrees/
+.pytest_cache/
+docs/build/
+_to_delete/
+
+# editors / OS
+.idea/
+.vscode/
+Thumbs.db
+
+# python build & test leftovers
+*.egg-info/
+build/
+dist/
+.coverage
+htmlcov/
+.mypy_cache/
+
+# secrets & logs
+.env
+*.log
