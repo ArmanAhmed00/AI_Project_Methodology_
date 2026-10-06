@@ -25,3 +25,6 @@ htmlcov/
 # secrets & logs
 .env
 *.log
+
+# sqlite temp files
+*.db-journal
